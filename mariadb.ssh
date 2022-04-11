@@ -1,0 +1,7 @@
+GITHUB_BASE_URL="https://raw.githubusercontent.com/JeanTacos/installation-modules/$GITHUB_SOURCE"
+
+apt install sudo 
+
+sudo apt install mariadb-server
+
+curl -o /etc/systemd/system/mariadb.service.d/lxc.conf $GITHUB_BASE_URL/lxc.conf
